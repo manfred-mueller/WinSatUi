@@ -1,4 +1,4 @@
-Bilindiği üzere Windows 10'da Winsat artık görsel değil. Bu projede görselleştirilmesi amaçlanmıştır.
+Localized graphical ui for the 'winsat formal' command. Heavily based on Windows10_Winsat_UI. Version recognition now based on build numbers.
 
-![alt text](https://github.com/ilkeryasinaksoy/Windows10_Winsat_UI/raw/master/Screenshot.jpg)
+![alt text](https://github.com/manfred-mueller/WinsatUI/raw/master/Screenshot.jpg)
 
