@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.versionBox = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,7 @@
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.buildLabel = new MetroFramework.Controls.MetroLabel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.versionBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -116,6 +118,7 @@
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.metroLabel6, resources.GetString("metroLabel6.ToolTip"));
             // 
             // metroLabel7
             // 
@@ -123,6 +126,7 @@
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.metroLabel7, resources.GetString("metroLabel7.ToolTip"));
             // 
             // metroLabel8
             // 
@@ -130,6 +134,7 @@
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.metroLabel8, resources.GetString("metroLabel8.ToolTip"));
             // 
             // metroLabel9
             // 
@@ -137,6 +142,7 @@
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel9.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.metroLabel9, resources.GetString("metroLabel9.ToolTip"));
             // 
             // metroLabel10
             // 
@@ -144,6 +150,7 @@
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel10.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.metroLabel10, resources.GetString("metroLabel10.ToolTip"));
             // 
             // groupBox1
             // 
@@ -226,6 +233,7 @@
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroLabel buildLabel;
+        public System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

@@ -127,7 +127,7 @@ namespace WinSatUi
             metroButton3.Enabled = false;
             findSystem();             
             metroProgressSpinner1.Value = 40;
-
+            groupBox1.Focus();
         }
 
         private async void metroButton1_Click(object sender, EventArgs e)

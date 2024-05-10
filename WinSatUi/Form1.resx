@@ -312,6 +312,9 @@
   <data name="&gt;&gt;metroLabel5.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="metroLabel6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -326,6 +329,9 @@
   </data>
   <data name="metroLabel6.Text" xml:space="preserve">
     <value>Processor:</value>
+  </data>
+  <data name="metroLabel6.ToolTip" xml:space="preserve">
+    <value>Calculations per second</value>
   </data>
   <data name="&gt;&gt;metroLabel6.Name" xml:space="preserve">
     <value>metroLabel6</value>
@@ -354,6 +360,9 @@
   <data name="metroLabel7.Text" xml:space="preserve">
     <value>Memory (RAM):</value>
   </data>
+  <data name="metroLabel7.ToolTip" xml:space="preserve">
+    <value>Memory operations per second</value>
+  </data>
   <data name="&gt;&gt;metroLabel7.Name" xml:space="preserve">
     <value>metroLabel7</value>
   </data>
@@ -381,6 +390,9 @@
   <data name="metroLabel8.Text" xml:space="preserve">
     <value>Graphics:</value>
   </data>
+  <data name="metroLabel8.ToolTip" xml:space="preserve">
+    <value>Desktop graphics performance</value>
+  </data>
   <data name="&gt;&gt;metroLabel8.Name" xml:space="preserve">
     <value>metroLabel8</value>
   </data>
@@ -393,6 +405,9 @@
   <data name="&gt;&gt;metroLabel8.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="metroLabel9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -407,6 +422,9 @@
   </data>
   <data name="metroLabel9.Text" xml:space="preserve">
     <value>Game Graphics:</value>
+  </data>
+  <data name="metroLabel9.ToolTip" xml:space="preserve">
+    <value>3D business and gaming graphics performance</value>
   </data>
   <data name="&gt;&gt;metroLabel9.Name" xml:space="preserve">
     <value>metroLabel9</value>
@@ -434,6 +452,9 @@
   </data>
   <data name="metroLabel10.Text" xml:space="preserve">
     <value>Primary Disk:</value>
+  </data>
+  <data name="metroLabel10.ToolTip" xml:space="preserve">
+    <value>Disk data transfer rate</value>
   </data>
   <data name="&gt;&gt;metroLabel10.Name" xml:space="preserve">
     <value>metroLabel10</value>
@@ -543,6 +564,9 @@
   <data name="&gt;&gt;buildLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -554,6 +578,12 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>568, 414</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

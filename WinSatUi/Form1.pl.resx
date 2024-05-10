@@ -144,4 +144,19 @@
   <data name="metroButton3.Text" xml:space="preserve">
     <value>Zatrzymaj test</value>
   </data>
+  <data name="metroLabel6.ToolTip" xml:space="preserve">
+    <value>Obliczenia na sekundę</value>
+  </data>
+  <data name="metroLabel7.ToolTip" xml:space="preserve">
+    <value>Operacje pamięci na sekundę</value>
+  </data>
+  <data name="metroLabel8.ToolTip" xml:space="preserve">
+    <value>Wydajność grafiki na komputerach stacjonarnych</value>
+  </data>
+  <data name="metroLabel9.ToolTip" xml:space="preserve">
+    <value>Wydajność grafiki 3D w biznesie i grach</value>
+  </data>
+  <data name="metroLabel10.ToolTip" xml:space="preserve">
+    <value>Szybkość transferu danych na dysku</value>
+  </data>
 </root>

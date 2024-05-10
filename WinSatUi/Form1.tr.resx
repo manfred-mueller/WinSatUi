@@ -144,4 +144,19 @@
   <data name="metroButton3.Text" xml:space="preserve">
     <value>Testi durdur</value>
   </data>
+  <data name="metroLabel6.ToolTip" xml:space="preserve">
+    <value>Saniye başına hesaplamalar</value>
+  </data>
+  <data name="metroLabel7.ToolTip" xml:space="preserve">
+    <value>Saniye başına bellek işlemleri</value>
+  </data>
+  <data name="metroLabel8.ToolTip" xml:space="preserve">
+    <value>Masaüstü grafik performansı</value>
+  </data>
+  <data name="metroLabel9.ToolTip" xml:space="preserve">
+    <value>3D iş ve oyun grafik performansı</value>
+  </data>
+  <data name="metroLabel10.ToolTip" xml:space="preserve">
+    <value>Disk veri aktarım hızı</value>
+  </data>
 </root>
