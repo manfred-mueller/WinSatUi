@@ -30,36 +30,36 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.startButton = new MetroFramework.Controls.MetroButton();
             this.versionBox = new System.Windows.Forms.PictureBox();
             this.metroProgressSpinner1 = new MetroFramework.Controls.MetroProgressSpinner();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.cpuValLabel = new MetroFramework.Controls.MetroLabel();
+            this.memValLabel = new MetroFramework.Controls.MetroLabel();
+            this.graphicsValLabel = new MetroFramework.Controls.MetroLabel();
+            this.gameValLabel = new MetroFramework.Controls.MetroLabel();
+            this.diskValLabel = new MetroFramework.Controls.MetroLabel();
+            this.cpuLabel = new MetroFramework.Controls.MetroLabel();
+            this.memLabel = new MetroFramework.Controls.MetroLabel();
+            this.graphicsLabel = new MetroFramework.Controls.MetroLabel();
+            this.gameLabel = new MetroFramework.Controls.MetroLabel();
+            this.diskLabel = new MetroFramework.Controls.MetroLabel();
+            this.valueBox = new System.Windows.Forms.GroupBox();
+            this.recentButton = new MetroFramework.Controls.MetroButton();
+            this.stopButton = new MetroFramework.Controls.MetroButton();
             this.buildLabel = new MetroFramework.Controls.MetroLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.versionBox)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.valueBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroButton1
+            // startButton
             // 
-            resources.ApplyResources(this.metroButton1, "metroButton1");
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            resources.ApplyResources(this.startButton, "startButton");
+            this.startButton.Name = "startButton";
+            this.startButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.startButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.startButton.UseSelectable = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // versionBox
             // 
@@ -77,114 +77,114 @@
             this.metroProgressSpinner1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroProgressSpinner1.UseSelectable = true;
             // 
-            // metroLabel1
+            // cpuValLabel
             // 
-            resources.ApplyResources(this.metroLabel1, "metroLabel1");
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
+            resources.ApplyResources(this.cpuValLabel, "cpuValLabel");
+            this.cpuValLabel.Name = "cpuValLabel";
+            this.cpuValLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cpuValLabel.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroLabel2
+            // memValLabel
             // 
-            resources.ApplyResources(this.metroLabel2, "metroLabel2");
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
+            resources.ApplyResources(this.memValLabel, "memValLabel");
+            this.memValLabel.Name = "memValLabel";
+            this.memValLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.memValLabel.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroLabel3
+            // graphicsValLabel
             // 
-            resources.ApplyResources(this.metroLabel3, "metroLabel3");
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
+            resources.ApplyResources(this.graphicsValLabel, "graphicsValLabel");
+            this.graphicsValLabel.Name = "graphicsValLabel";
+            this.graphicsValLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.graphicsValLabel.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroLabel4
+            // gameValLabel
             // 
-            resources.ApplyResources(this.metroLabel4, "metroLabel4");
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
+            resources.ApplyResources(this.gameValLabel, "gameValLabel");
+            this.gameValLabel.Name = "gameValLabel";
+            this.gameValLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.gameValLabel.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroLabel5
+            // diskValLabel
             // 
-            resources.ApplyResources(this.metroLabel5, "metroLabel5");
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Light;
+            resources.ApplyResources(this.diskValLabel, "diskValLabel");
+            this.diskValLabel.Name = "diskValLabel";
+            this.diskValLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.diskValLabel.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroLabel6
+            // cpuLabel
             // 
-            resources.ApplyResources(this.metroLabel6, "metroLabel6");
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.toolTip1.SetToolTip(this.metroLabel6, resources.GetString("metroLabel6.ToolTip"));
+            resources.ApplyResources(this.cpuLabel, "cpuLabel");
+            this.cpuLabel.Name = "cpuLabel";
+            this.cpuLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cpuLabel.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.cpuLabel, resources.GetString("cpuLabel.ToolTip"));
             // 
-            // metroLabel7
+            // memLabel
             // 
-            resources.ApplyResources(this.metroLabel7, "metroLabel7");
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.toolTip1.SetToolTip(this.metroLabel7, resources.GetString("metroLabel7.ToolTip"));
+            resources.ApplyResources(this.memLabel, "memLabel");
+            this.memLabel.Name = "memLabel";
+            this.memLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.memLabel.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.memLabel, resources.GetString("memLabel.ToolTip"));
             // 
-            // metroLabel8
+            // graphicsLabel
             // 
-            resources.ApplyResources(this.metroLabel8, "metroLabel8");
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.toolTip1.SetToolTip(this.metroLabel8, resources.GetString("metroLabel8.ToolTip"));
+            resources.ApplyResources(this.graphicsLabel, "graphicsLabel");
+            this.graphicsLabel.Name = "graphicsLabel";
+            this.graphicsLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.graphicsLabel.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.graphicsLabel, resources.GetString("graphicsLabel.ToolTip"));
             // 
-            // metroLabel9
+            // gameLabel
             // 
-            resources.ApplyResources(this.metroLabel9, "metroLabel9");
-            this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel9.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.toolTip1.SetToolTip(this.metroLabel9, resources.GetString("metroLabel9.ToolTip"));
+            resources.ApplyResources(this.gameLabel, "gameLabel");
+            this.gameLabel.Name = "gameLabel";
+            this.gameLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.gameLabel.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.gameLabel, resources.GetString("gameLabel.ToolTip"));
             // 
-            // metroLabel10
+            // diskLabel
             // 
-            resources.ApplyResources(this.metroLabel10, "metroLabel10");
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel10.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.toolTip1.SetToolTip(this.metroLabel10, resources.GetString("metroLabel10.ToolTip"));
+            resources.ApplyResources(this.diskLabel, "diskLabel");
+            this.diskLabel.Name = "diskLabel";
+            this.diskLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.diskLabel.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.toolTip1.SetToolTip(this.diskLabel, resources.GetString("diskLabel.ToolTip"));
             // 
-            // groupBox1
+            // valueBox
             // 
-            this.groupBox1.Controls.Add(this.metroLabel7);
-            this.groupBox1.Controls.Add(this.metroLabel10);
-            this.groupBox1.Controls.Add(this.metroLabel1);
-            this.groupBox1.Controls.Add(this.metroLabel9);
-            this.groupBox1.Controls.Add(this.metroLabel2);
-            this.groupBox1.Controls.Add(this.metroLabel8);
-            this.groupBox1.Controls.Add(this.metroLabel3);
-            this.groupBox1.Controls.Add(this.metroLabel4);
-            this.groupBox1.Controls.Add(this.metroLabel6);
-            this.groupBox1.Controls.Add(this.metroLabel5);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            this.valueBox.Controls.Add(this.memLabel);
+            this.valueBox.Controls.Add(this.diskLabel);
+            this.valueBox.Controls.Add(this.cpuValLabel);
+            this.valueBox.Controls.Add(this.gameLabel);
+            this.valueBox.Controls.Add(this.memValLabel);
+            this.valueBox.Controls.Add(this.graphicsLabel);
+            this.valueBox.Controls.Add(this.graphicsValLabel);
+            this.valueBox.Controls.Add(this.gameValLabel);
+            this.valueBox.Controls.Add(this.cpuLabel);
+            this.valueBox.Controls.Add(this.diskValLabel);
+            resources.ApplyResources(this.valueBox, "valueBox");
+            this.valueBox.Name = "valueBox";
+            this.valueBox.TabStop = false;
             // 
-            // metroButton2
+            // recentButton
             // 
-            resources.ApplyResources(this.metroButton2, "metroButton2");
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            resources.ApplyResources(this.recentButton, "recentButton");
+            this.recentButton.Name = "recentButton";
+            this.recentButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.recentButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.recentButton.UseSelectable = true;
+            this.recentButton.Click += new System.EventHandler(this.recentButton_Click);
             // 
-            // metroButton3
+            // stopButton
             // 
-            resources.ApplyResources(this.metroButton3, "metroButton3");
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton3.UseSelectable = true;
-            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            resources.ApplyResources(this.stopButton, "stopButton");
+            this.stopButton.Name = "stopButton";
+            this.stopButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.stopButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.stopButton.UseSelectable = true;
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
             // buildLabel
             // 
@@ -196,42 +196,42 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.buildLabel);
-            this.Controls.Add(this.metroButton3);
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.stopButton);
+            this.Controls.Add(this.recentButton);
+            this.Controls.Add(this.valueBox);
             this.Controls.Add(this.metroProgressSpinner1);
             this.Controls.Add(this.versionBox);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.startButton);
             this.Icon = global::WinSatUi.Properties.Resources.WinSatUi;
             this.Name = "Form1";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.versionBox)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.valueBox.ResumeLayout(false);
+            this.valueBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton startButton;
         private System.Windows.Forms.PictureBox versionBox;
         private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinner1;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroLabel metroLabel6;
-        private MetroFramework.Controls.MetroLabel metroLabel7;
-        private MetroFramework.Controls.MetroLabel metroLabel8;
-        private MetroFramework.Controls.MetroLabel metroLabel9;
-        private MetroFramework.Controls.MetroLabel metroLabel10;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroLabel cpuValLabel;
+        private MetroFramework.Controls.MetroLabel memValLabel;
+        private MetroFramework.Controls.MetroLabel graphicsValLabel;
+        private MetroFramework.Controls.MetroLabel gameValLabel;
+        private MetroFramework.Controls.MetroLabel diskValLabel;
+        private MetroFramework.Controls.MetroLabel cpuLabel;
+        private MetroFramework.Controls.MetroLabel memLabel;
+        private MetroFramework.Controls.MetroLabel graphicsLabel;
+        private MetroFramework.Controls.MetroLabel gameLabel;
+        private MetroFramework.Controls.MetroLabel diskLabel;
+        private System.Windows.Forms.GroupBox valueBox;
+        private MetroFramework.Controls.MetroButton recentButton;
+        private MetroFramework.Controls.MetroButton stopButton;
         private MetroFramework.Controls.MetroLabel buildLabel;
         public System.Windows.Forms.ToolTip toolTip1;
     }

@@ -84,9 +84,7 @@ namespace WinSatUi
                         highDir = subdir;
                         lastHigh = created;
                     }
-                }
-
-                
+                }                
             }
             
 
@@ -95,15 +93,12 @@ namespace WinSatUi
             XmlNodeList xnList = xml.SelectNodes("/WinSAT/WinSPR");
             foreach (XmlNode xnNode in xnList)
             {
-                metroLabel1.Text = xnNode["CpuScore"].InnerText.ToString();
-                metroLabel2.Text = xnNode["MemoryScore"].InnerText.ToString();
-                metroLabel3.Text = xnNode["GraphicsScore"].InnerText.ToString();
-                metroLabel4.Text = xnNode["GamingScore"].InnerText.ToString();
-                metroLabel5.Text = xnNode["DiskScore"].InnerText.ToString();
-
-
-                
-
+                cpuValLabel.Text = xnNode["CpuScore"].InnerText.ToString();
+                memValLabel.Text = xnNode["MemoryScore"].InnerText.ToString();
+                graphicsValLabel.Text = xnNode["GraphicsScore"].InnerText.ToString();
+                gameValLabel.Text = xnNode["GamingScore"].InnerText.ToString();
+                diskValLabel.Text = xnNode["DiskScore"].InnerText.ToString();
+                valueBox.Text = WinSatUi.Properties.Resources.ScoresFrom + lastHigh.ToString();
             }
 
         }
@@ -124,35 +119,35 @@ namespace WinSatUi
                     this.Text = Properties.Resources.SystemRatingTool + process["Model"];
                 }
             }
-            metroButton3.Enabled = false;
+            stopButton.Enabled = false;
             findSystem();             
             metroProgressSpinner1.Value = 40;
-            groupBox1.Focus();
+            valueBox.Focus();
         }
 
-        private async void metroButton1_Click(object sender, EventArgs e)
+        private async void startButton_Click(object sender, EventArgs e)
         {
-            metroButton1.Enabled = false;
-            metroButton2.Enabled = false;
-            metroButton3.Enabled = true;
+            startButton.Enabled = false;
+            recentButton.Enabled = false;
+            stopButton.Enabled = true;
             metroProgressSpinner1.Visible = true;
             metroProgressSpinner1.Enabled = true;
-            groupBox1.Enabled = false;
+            valueBox.Enabled = false;
             await asyncTest();
             metroProgressSpinner1.Visible = false;
-            groupBox1.Enabled = true;
-            metroButton1.Enabled = true;
-            metroButton2.Enabled = true;
-            metroButton3.Enabled = false;
+            valueBox.Enabled = true;
+            startButton.Enabled = true;
+            recentButton.Enabled = true;
+            stopButton.Enabled = false;
             XML();
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void recentButton_Click(object sender, EventArgs e)
         {
             XML();
         }
 
-        private void metroButton3_Click(object sender, EventArgs e)
+        private void stopButton_Click(object sender, EventArgs e)
         {
             Process[] processes = Process.GetProcessesByName("WinSAT");
             foreach (var process in processes)

@@ -117,46 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="metroButton1.Text" xml:space="preserve">
+  <data name="startButton.Text" xml:space="preserve">
     <value>Rozpocznij test</value>
   </data>
-  <data name="metroLabel6.Text" xml:space="preserve">
+  <data name="cpuLabel.Text" xml:space="preserve">
     <value>Procesor:</value>
   </data>
-  <data name="metroLabel7.Text" xml:space="preserve">
+  <data name="memLabel.Text" xml:space="preserve">
     <value>Pamięć (RAM):</value>
   </data>
-  <data name="metroLabel8.Text" xml:space="preserve">
+  <data name="graphicsLabel.Text" xml:space="preserve">
     <value>Grafika:</value>
   </data>
-  <data name="metroLabel9.Text" xml:space="preserve">
+  <data name="gameLabel.Text" xml:space="preserve">
     <value>Grafika gry:</value>
   </data>
-  <data name="metroLabel10.Text" xml:space="preserve">
+  <data name="diskLabel.Text" xml:space="preserve">
     <value>Dysk główny:</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Wyniki</value>
-  </data>
-  <data name="metroButton2.Text" xml:space="preserve">
+  <data name="recentButton.Text" xml:space="preserve">
     <value>Najnowsze dane</value>
   </data>
-  <data name="metroButton3.Text" xml:space="preserve">
+  <data name="stopButton.Text" xml:space="preserve">
     <value>Zatrzymaj test</value>
   </data>
-  <data name="metroLabel6.ToolTip" xml:space="preserve">
+  <data name="cpuLabel.ToolTip" xml:space="preserve">
     <value>Obliczenia na sekundę</value>
   </data>
-  <data name="metroLabel7.ToolTip" xml:space="preserve">
+  <data name="memLabel.ToolTip" xml:space="preserve">
     <value>Operacje pamięci na sekundę</value>
   </data>
-  <data name="metroLabel8.ToolTip" xml:space="preserve">
+  <data name="graphicsLabel.ToolTip" xml:space="preserve">
     <value>Wydajność grafiki na komputerach stacjonarnych</value>
   </data>
-  <data name="metroLabel9.ToolTip" xml:space="preserve">
+  <data name="gameLabel.ToolTip" xml:space="preserve">
     <value>Wydajność grafiki 3D w biznesie i grach</value>
   </data>
-  <data name="metroLabel10.ToolTip" xml:space="preserve">
+  <data name="diskLabel.ToolTip" xml:space="preserve">
     <value>Szybkość transferu danych na dysku</value>
   </data>
 </root>
