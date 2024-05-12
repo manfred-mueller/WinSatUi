@@ -135,9 +135,6 @@
   <data name="diskLabel.Text" xml:space="preserve">
     <value>Birincil Disk:</value>
   </data>
-  <data name="recentButton.Text" xml:space="preserve">
-    <value>Güncel Veriler</value>
-  </data>
   <data name="stopButton.Text" xml:space="preserve">
     <value>Testi durdur</value>
   </data>
@@ -155,5 +152,8 @@
   </data>
   <data name="diskLabel.ToolTip" xml:space="preserve">
     <value>Disk veri aktarım hızı</value>
+  </data>
+  <data name="cameraButton.ToolTip" xml:space="preserve">
+    <value>Ekran görüntüsü alın</value>
   </data>
 </root>

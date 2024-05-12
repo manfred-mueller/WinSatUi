@@ -123,4 +123,31 @@
   <data name="SystemRatingTool" xml:space="preserve">
     <value>Sistem Derecelendirme Aracı: </value>
   </data>
+  <data name="ScoresFrom" xml:space="preserve">
+    <value>Puan </value>
+  </data>
+  <data name="cameraLabel.ToolTip" xml:space="preserve">
+    <value>Ekran görüntüsü alın</value>
+  </data>
+  <data name="shareLabel.ToolTip" xml:space="preserve">
+    <value>imgur'da paylaş</value>
+  </data>
+  <data name="deleteLabel.ToolTip" xml:space="preserve">
+    <value>imgUr üzerinde sil</value>
+  </data>
+  <data name="ScreenshotSavedAt" xml:space="preserve">
+    <value>Ekran görüntüsü şu adrese kaydedildi:</value>
+  </data>
+  <data name="DoYouWantToShareTheValuesViaImgur" xml:space="preserve">
+    <value>Değerleri imgur üzerinden paylaşmak ister misiniz?</value>
+  </data>
+  <data name="ShareViaImgur" xml:space="preserve">
+    <value>imgur üzerinden paylaşın</value>
+  </data>
+  <data name="FailedToUploadToImgur" xml:space="preserve">
+    <value>Imgur'a yükleme başarısız oldu.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
 </root>

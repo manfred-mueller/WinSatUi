@@ -135,9 +135,6 @@
   <data name="diskLabel.Text" xml:space="preserve">
     <value>Dysk główny:</value>
   </data>
-  <data name="recentButton.Text" xml:space="preserve">
-    <value>Najnowsze dane</value>
-  </data>
   <data name="stopButton.Text" xml:space="preserve">
     <value>Zatrzymaj test</value>
   </data>
@@ -155,5 +152,8 @@
   </data>
   <data name="diskLabel.ToolTip" xml:space="preserve">
     <value>Szybkość transferu danych na dysku</value>
+  </data>
+  <data name="cameraButton.ToolTip" xml:space="preserve">
+    <value>Zrzut ekranu</value>
   </data>
 </root>

@@ -44,10 +44,10 @@
             this.gameLabel = new MetroFramework.Controls.MetroLabel();
             this.diskLabel = new MetroFramework.Controls.MetroLabel();
             this.valueBox = new System.Windows.Forms.GroupBox();
-            this.recentButton = new MetroFramework.Controls.MetroButton();
             this.stopButton = new MetroFramework.Controls.MetroButton();
             this.buildLabel = new MetroFramework.Controls.MetroLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cameraButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.versionBox)).BeginInit();
             this.valueBox.SuspendLayout();
             this.SuspendLayout();
@@ -168,15 +168,6 @@
             this.valueBox.Name = "valueBox";
             this.valueBox.TabStop = false;
             // 
-            // recentButton
-            // 
-            resources.ApplyResources(this.recentButton, "recentButton");
-            this.recentButton.Name = "recentButton";
-            this.recentButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.recentButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.recentButton.UseSelectable = true;
-            this.recentButton.Click += new System.EventHandler(this.recentButton_Click);
-            // 
             // stopButton
             // 
             resources.ApplyResources(this.stopButton, "stopButton");
@@ -191,20 +182,31 @@
             resources.ApplyResources(this.buildLabel, "buildLabel");
             this.buildLabel.Name = "buildLabel";
             // 
+            // cameraButton
+            // 
+            this.cameraButton.BackgroundImage = global::WinSatUi.Properties.Resources.camera;
+            resources.ApplyResources(this.cameraButton, "cameraButton");
+            this.cameraButton.Name = "cameraButton";
+            this.toolTip1.SetToolTip(this.cameraButton, resources.GetString("cameraButton.ToolTip"));
+            this.cameraButton.UseVisualStyleBackColor = true;
+            this.cameraButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cameraButton_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cameraButton);
             this.Controls.Add(this.buildLabel);
             this.Controls.Add(this.stopButton);
-            this.Controls.Add(this.recentButton);
             this.Controls.Add(this.valueBox);
             this.Controls.Add(this.metroProgressSpinner1);
             this.Controls.Add(this.versionBox);
             this.Controls.Add(this.startButton);
             this.Icon = global::WinSatUi.Properties.Resources.WinSatUi;
             this.Name = "Form1";
+            this.Style = MetroFramework.MetroColorStyle.Silver;
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
+            this.Theme = MetroFramework.MetroThemeStyle.Default;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.versionBox)).EndInit();
@@ -230,10 +232,10 @@
         private MetroFramework.Controls.MetroLabel gameLabel;
         private MetroFramework.Controls.MetroLabel diskLabel;
         private System.Windows.Forms.GroupBox valueBox;
-        private MetroFramework.Controls.MetroButton recentButton;
         private MetroFramework.Controls.MetroButton stopButton;
         private MetroFramework.Controls.MetroLabel buildLabel;
         public System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button cameraButton;
     }
 }
 

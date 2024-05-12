@@ -123,4 +123,31 @@
   <data name="SystemRatingTool" xml:space="preserve">
     <value>Narzędzie oceny systemu: </value>
   </data>
+  <data name="ScoresFrom" xml:space="preserve">
+    <value>Wyniki z </value>
+  </data>
+  <data name="cameraLabel.ToolTip" xml:space="preserve">
+    <value>Zrzut ekranu</value>
+  </data>
+  <data name="shareLabel.ToolTip" xml:space="preserve">
+    <value>Udostępnij na imgur</value>
+  </data>
+  <data name="deleteLabel.ToolTip" xml:space="preserve">
+    <value>Usuń na imgUr</value>
+  </data>
+  <data name="ScreenshotSavedAt" xml:space="preserve">
+    <value>Zrzut ekranu zapisany pod adresem:</value>
+  </data>
+  <data name="DoYouWantToShareTheValuesViaImgur" xml:space="preserve">
+    <value>Czy chcesz udostępnić wartości za pośrednictwem imgur?</value>
+  </data>
+  <data name="ShareViaImgur" xml:space="preserve">
+    <value>Udostępnij przez imgur</value>
+  </data>
+  <data name="FailedToUploadToImgur" xml:space="preserve">
+    <value>Nie udało się przesłać do Imgur.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
 </root>

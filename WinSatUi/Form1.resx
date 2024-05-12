@@ -214,7 +214,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;cpuValLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="memValLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -238,7 +238,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;memValLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="graphicsValLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -262,7 +262,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;graphicsValLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="gameValLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -286,7 +286,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;gameValLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="diskValLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -310,7 +310,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;diskValLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="cpuLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -327,9 +327,9 @@
   <data name="cpuLabel.Text" xml:space="preserve">
     <value>Processor:</value>
   </data>
-  <data name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
+  </metadata>
   <data name="cpuLabel.ToolTip" xml:space="preserve">
     <value>Calculations per second</value>
   </data>
@@ -343,7 +343,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;cpuLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="memLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -373,7 +373,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;memLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="graphicsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -403,7 +403,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;graphicsLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="gameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -433,7 +433,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;gameLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="diskLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -463,31 +463,7 @@
     <value>valueBox</value>
   </data>
   <data name="&gt;&gt;diskLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 177</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>valueBox</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="valueBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>255, 76</value>
@@ -510,32 +486,8 @@
   <data name="&gt;&gt;valueBox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="recentButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 330</value>
-  </data>
-  <data name="recentButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 44</value>
-  </data>
-  <data name="recentButton.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="recentButton.Text" xml:space="preserve">
-    <value>Recent Data</value>
-  </data>
-  <data name="&gt;&gt;recentButton.Name" xml:space="preserve">
-    <value>recentButton</value>
-  </data>
-  <data name="&gt;&gt;recentButton.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;recentButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;recentButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="stopButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 330</value>
+    <value>171, 330</value>
   </data>
   <data name="stopButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 44</value>
@@ -556,7 +508,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;stopButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="buildLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>68, 202</value>
@@ -580,11 +532,38 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buildLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cameraButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="cameraButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 328</value>
+  </data>
+  <data name="cameraButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 48</value>
+  </data>
+  <data name="cameraButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="cameraButton.ToolTip" xml:space="preserve">
+    <value>Take screenshot</value>
+  </data>
+  <data name="&gt;&gt;cameraButton.Name" xml:space="preserve">
+    <value>cameraButton</value>
+  </data>
+  <data name="&gt;&gt;cameraButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cameraButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cameraButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>

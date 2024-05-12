@@ -61,7 +61,87 @@ namespace WinSatUi.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die SystemRatingTool ähnelt.
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap camera {
+            get {
+                object obj = ResourceManager.GetObject("camera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Take screenshot ähnelt.
+        /// </summary>
+        public static string cameraLabel_ToolTip {
+            get {
+                return ResourceManager.GetString("cameraLabel.ToolTip", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Do You Want To Share The Values Via Imgur ähnelt.
+        /// </summary>
+        public static string DoYouWantToShareTheValuesViaImgur
+        {
+            get {
+                return ResourceManager.GetString("DoYouWantToShareTheValuesViaImgur", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Scores from  ähnelt.
+        /// </summary>
+        public static string ScoresFrom {
+            get {
+                return ResourceManager.GetString("ScoresFrom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Screenshot saved at: ähnelt.
+        /// </summary>
+        public static string ScreenshotSavedAt {
+            get {
+                return ResourceManager.GetString("ScreenshotSavedAt", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Share Via Imgur ähnelt.
+        /// </summary>
+        public static string ShareViaImgur
+        {
+            get
+            {
+                return ResourceManager.GetString("ShareViaImgur", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Failed To Upload To Imgur ähnelt.
+        /// </summary>
+        public static string FailedToUploadToImgur
+        {
+            get
+            {
+                return ResourceManager.GetString("FailedToUploadToImgur", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Error ähnelt.
+        /// </summary>
+        public static string Error
+        {
+            get
+            {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die System Rating Tool:  ähnelt.
         /// </summary>
         public static string SystemRatingTool {
             get {
