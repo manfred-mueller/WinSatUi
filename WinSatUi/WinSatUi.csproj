@@ -327,7 +327,6 @@
     <None Include="windows81.png" />
     <None Include="camera.png" />
     <None Include="delete.png" />
-    <None Include="Imgur.config" />
     <Content Include="WinSatUi.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
