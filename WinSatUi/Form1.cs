@@ -5,9 +5,10 @@ using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using Task = System.Threading.Tasks.Task;
+using System.Management;
 
 namespace WinSatUi
 {
@@ -15,6 +16,8 @@ namespace WinSatUi
     {
         public string appName = Properties.Resources.SystemRatingTool;
         public string testDate = "";
+        public string processor;
+        public string memoryString;
         public string idImgur = Properties.Settings.Default.ClientID;
         public NotifyIcon notifyIcon;
 
@@ -110,6 +113,86 @@ namespace WinSatUi
                     diskValLabel.Text = xnNode["DiskScore"].InnerText.ToString();
                     valueBox.Text = Properties.Resources.ScoresFrom + testDate;
                 }
+                // Parse processor model.
+                string processor =
+                    ParseXmlData(
+                        "WinSAT/SystemConfig/Processor/Instance",
+                        "ProcessorName",
+                        highDir);
+                // Parse memory size.
+                string memory =
+                    ParseXmlData(
+                        "WinSAT/SystemConfig/Memory/DIMM",
+                        "MemoryType",
+                        highDir);
+                if (memory.Equals("22"))
+                {
+                    memoryString = "DDR2";
+                }
+                else if (memory.Equals("24"))
+                {
+                    memoryString = "DDR3";
+                }
+                else if (memory.Equals("26"))
+                {
+                    memoryString = "DDR4";
+                }
+                else if (memory.Equals("28"))
+                {
+                    memoryString = "DDR5";
+                }
+
+                // Parse memory size.
+                string memorySizeString =
+                    ParseXmlData(
+                        "WinSAT/SystemConfig/Memory/TotalPhysical",
+                        "Size",
+                        highDir);
+
+                long memorySize;
+
+                if (!long.TryParse(memorySizeString, out memorySize))
+                    memorySize = 0;
+
+                // Parse graphics card model.
+                string graphics =
+                    ParseXmlData(
+                        "WinSAT/SystemConfig/Graphics",
+                        "AdapterDescription",
+                        highDir);
+
+                // Parse VRAM size.
+                string vramSizeMegaBytes =
+                    ParseXmlData(
+                        "WinSAT/SystemConfig/Graphics",
+                        "DedicatedVideoMemory",
+                        highDir);
+
+                long vramSize;
+
+                if (!long.TryParse(vramSizeMegaBytes, out vramSize))
+                    vramSize = 0;
+                int myVramSize = (int)(vramSize / 1024 / 1024);
+
+                // Parse disk model.
+                string disk =
+                    ParseXmlData(
+                        "WinSAT/SystemConfig/Disk/SystemDisk",
+                        "Model",
+                        highDir);
+
+                // Parse disk model.
+                string diskSizeMegaBytes =
+                    ParseXmlData(
+                        "WinSAT/SystemConfig/Disk/SystemDisk",
+                        "Size",
+                        highDir);
+                long diskSize;
+                if (!long.TryParse(diskSizeMegaBytes, out diskSize))
+                    diskSize = 0;
+                int myDiskSize = (int)(diskSize / 1024 / 1024 / 1024);
+                string messageText = string.Format("CPU: {0}\nMemory: {1} {2}\nGraphics: {3}, {4} MB VRAM\nDisk: {5} {6} {7}GB\n", processor, memorySizeString, memoryString, graphics, myVramSize, detect_primary_disk(), disk, myDiskSize);
+                MessageBox.Show(messageText, "Systeminformation", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         public Form1()
@@ -284,6 +367,72 @@ namespace WinSatUi
             }
 
             notifyIcon.ShowBalloonTip(5000);
+        }
+        internal static string ParseXmlData(string nodeName, string innerNodeName, string filePath)
+        {
+            try
+            {
+                XmlDocument xmlDoc = new XmlDocument();
+                XmlNode node;
+
+                xmlDoc.Load(filePath);
+
+                node = xmlDoc.SelectSingleNode(nodeName);
+
+                if (node != null)
+                {
+                    XmlNode innerNode =
+                        node.SelectSingleNode(
+                            innerNodeName);
+
+                    return innerNode != null
+                        ? innerNode.InnerText
+                        : null;
+                }
+
+                return null;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+        private string detect_primary_disk()
+        {
+            // Retrieve information about all disk drives
+            ManagementObjectSearcher diskSearcher = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive");
+
+            foreach (ManagementObject disk in diskSearcher.Get())
+            {
+                string diskId = disk["DeviceID"].ToString();
+
+                // Check if the disk contains the system directory
+                ManagementObjectSearcher partitionSearcher = new ManagementObjectSearcher("ASSOCIATORS OF {Win32_DiskDrive.DeviceID='" + diskId + "'} WHERE ResultClass=Win32_DiskPartition");
+
+                foreach (ManagementObject partition in partitionSearcher.Get())
+                {
+                    ManagementObjectSearcher logicalDiskSearcher = new ManagementObjectSearcher("ASSOCIATORS OF {Win32_DiskPartition.DeviceID='" + partition["DeviceID"] + "'} WHERE ResultClass=Win32_LogicalDisk");
+
+                    foreach (ManagementObject logicalDisk in logicalDiskSearcher.Get())
+                    {
+                        string driveType = logicalDisk["DriveType"].ToString();
+                        string driveLetter = logicalDisk["DeviceID"].ToString();
+
+                        // DriveType 3 represents the local disk
+                        if (driveType == "3" && System.IO.Path.GetPathRoot(Environment.SystemDirectory) == driveLetter)
+                        {
+                            // Return the type of the disk based on its rotation speed
+                            if (disk["RotationSpeed"] != null)
+                                return "HDD";
+                            else
+                                return "SSD/NVMe";
+                        }
+                    }
+                }
+            }
+
+            // If no disk is found containing the system directory, return SSD/NVMe by default
+            return "SSD/NVMe";
         }
     }
 }
