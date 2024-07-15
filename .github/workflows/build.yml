@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch: # Add this to enable manual triggering
 
 jobs:
   build:
@@ -18,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '4.8'
+        dotnet-version: '4.8' # Ensure this matches your .NET version
 
     - name: Restore dependencies
       run: dotnet restore
