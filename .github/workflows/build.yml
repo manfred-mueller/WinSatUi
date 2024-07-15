@@ -1,11 +1,11 @@
 name: Build, Test, and Release WinSatUi
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
+ push:
+   branches:
+     - master
+   tags:
+     - "*"
 
 jobs:
   build:
