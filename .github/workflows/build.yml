@@ -11,12 +11,18 @@ jobs:
   build:
 
     runs-on: windows-latest
-    permissions:
-      contents: write  # Explicitly grant write permission to contents
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Cache NuGet packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
 
     - name: Set up MSBuild
       uses: microsoft/setup-msbuild@v1
