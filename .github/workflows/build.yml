@@ -65,9 +65,9 @@ jobs:
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         git add VERSION.txt
-        git commit -m "Increment version to $newVersion"
-        git tag "v$newVersion"
-        git push origin main --tags
+        #git commit -m "Increment version to $newVersion"
+        #git tag "v$newVersion"
+        #git push origin main --tags
 
     - name: Create Release
       id: create_release
