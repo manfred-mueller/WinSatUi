@@ -44,7 +44,7 @@ jobs:
       run: |
         # Ensure VERSION.txt exists
         if (-Not (Test-Path "VERSION.txt")) {
-          "0.0.0" > VERSION.txt
+          "1.1" > VERSION.txt
         }
 
         # Read the version from VERSION.txt
@@ -52,8 +52,8 @@ jobs:
 
         # Increment the version number
         $versionParts = $version -split '\.'
-        $versionParts[2] = [int]$versionParts[2] + 1
-        $newVersion = "$($versionParts[0]).$($versionParts[1]).$($versionParts[2])"
+        $versionParts[1] = [int]$versionParts[1] + 1
+        $newVersion = "$($versionParts[0]).$($versionParts[1])"
 
         # Write the new version to VERSION.txt
         $newVersion > VERSION.txt
@@ -65,20 +65,20 @@ jobs:
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         git add VERSION.txt
-        #git commit -m "Increment version to $newVersion"
-        #git tag "v$newVersion"
+        git commit -m "Increment version to $newVersion"
+        #git tag "$newVersion"
         #git push origin main --tags
 
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v2
       with:
-        tag_name: v${{ steps.increment_version.outputs.NEW_VERSION }}
-        release_name: Release ${{ steps.increment_version.outputs.NEW_VERSION }}
-        draft: false
-        prerelease: false
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: WinSatUi/bin/Release/WinSatUi.exe
+        asset_name: WinSatUi-${{ env.NEW_VERSION }}.exe
+        tag: ${{ env.NEW_VERSION }}
+        overwrite: true
+        body: ${{ github.event.workflow_run.head_commit.message }}
+
 
     - name: Upload Release Asset
       uses: actions/upload-release-asset@v1
