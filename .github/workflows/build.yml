@@ -19,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '4.8' # Ensure this matches your .NET version
+        dotnet-version: '7.0' # Ensure this matches your .NET version
 
     - name: Restore dependencies
       run: dotnet restore
