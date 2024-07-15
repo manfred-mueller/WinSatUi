@@ -51,7 +51,7 @@ Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}";
 Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon;
 
 [Files]
-Source: "..\WinSatUi\bin\Release\WinSatUi.exe"; DestDir: "{app}"; DestName: "{#MyAppExeName}"; Flags: confirmoverwrite
+Source: "WinSatUi\bin\Release\WinSatUi.exe"; DestDir: "{app}"; DestName: "{#MyAppExeName}"; Flags: confirmoverwrite
 
 [Code]
 

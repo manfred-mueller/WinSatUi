@@ -1,14 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34407.143
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinSatUi", "WinSatUi\WinSatUi.csproj", "{7F3551A0-27A0-4055-80AF-EBC013C1D6E1}"
-EndProject
-Project("{29E15B7A-B420-4782-B51D-1BE2F663A160}") = "Setup", "Setup\Setup.innoproj", "{2354CA5F-6BEC-472E-86ED-01280485FF2B}"
-	ProjectSection(ProjectDependencies) = postProject
-		{7F3551A0-27A0-4055-80AF-EBC013C1D6E1} = {7F3551A0-27A0-4055-80AF-EBC013C1D6E1}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,19 +21,12 @@ Global
 		{7F3551A0-27A0-4055-80AF-EBC013C1D6E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F3551A0-27A0-4055-80AF-EBC013C1D6E1}.Release|x86.ActiveCfg = Release|Any CPU
 		{7F3551A0-27A0-4055-80AF-EBC013C1D6E1}.Release|x86.Build.0 = Release|Any CPU
-		{2354CA5F-6BEC-472E-86ED-01280485FF2B}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{2354CA5F-6BEC-472E-86ED-01280485FF2B}.Debug|x86.ActiveCfg = Debug|x86
-		{2354CA5F-6BEC-472E-86ED-01280485FF2B}.Debug|x86.Build.0 = Debug|x86
-		{2354CA5F-6BEC-472E-86ED-01280485FF2B}.Release|Any CPU.ActiveCfg = Release|x86
-		{2354CA5F-6BEC-472E-86ED-01280485FF2B}.Release|Any CPU.Build.0 = Release|x86
-		{2354CA5F-6BEC-472E-86ED-01280485FF2B}.Release|x86.ActiveCfg = Release|x86
-		{2354CA5F-6BEC-472E-86ED-01280485FF2B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {46722BF7-6036-40FA-AE18-50F71700D801}
 		RESX_NeutralResourcesLanguage = en-US
+		SolutionGuid = {46722BF7-6036-40FA-AE18-50F71700D801}
 	EndGlobalSection
 EndGlobal
