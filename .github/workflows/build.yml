@@ -44,7 +44,7 @@ jobs:
       run: |
         # Ensure VERSION.txt exists
         if (-Not (Test-Path "VERSION.txt")) {
-          "1.1" > VERSION.txt
+          "1.2" > VERSION.txt
         }
 
         # Read the version from VERSION.txt
@@ -65,7 +65,7 @@ jobs:
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         git add VERSION.txt
-        git commit -m "Increment version to $newVersion"
+        git commit -m "Increment version to $newVersion by Github actions"
         git push origin master
 
     - name: Upload binaries to release
