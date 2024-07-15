@@ -58,8 +58,8 @@ jobs:
         # Write the new version to VERSION.txt
         $newVersion > VERSION.txt
 
-        # Set the new version as an output
-        echo "::set-output name=new_version::$newVersion"
+        # Write the new version to an environment file
+        Write-Output "NEW_VERSION=$newVersion" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
         # Commit the new version to the repository
         git config --global user.name "github-actions"
@@ -75,8 +75,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v${{ steps.increment_version.outputs.new_version }}
-        release_name: Release ${{ steps.increment_version.outputs.new_version }}
+        tag_name: v${{ steps.increment_version.outputs.NEW_VERSION }}
+        release_name: Release ${{ steps.increment_version.outputs.NEW_VERSION }}
         draft: false
         prerelease: false
 
