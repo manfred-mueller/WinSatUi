@@ -38,14 +38,42 @@ jobs:
         # Add your test runner command here if you have tests
         echo "No tests to run"
 
+    - name: Increment version number
+      id: increment_version
+      run: |
+        # Ensure VERSION.txt exists
+        if [ ! -f VERSION.txt ]; then echo "0.1.0" > VERSION.txt; fi
+        
+        # Read the version from VERSION.txt
+        VERSION=$(cat VERSION.txt)
+        
+        # Increment the version number
+        IFS='.' read -r -a VERSION_PARTS <<< "$VERSION"
+        VERSION_PARTS[2]=$((VERSION_PARTS[2] + 1))
+        NEW_VERSION="${VERSION_PARTS[0]}.${VERSION_PARTS[1]}.${VERSION_PARTS[2]}"
+        
+        # Write the new version to VERSION.txt
+        echo "$NEW_VERSION" > VERSION.txt
+        
+        # Set the new version as an output
+        echo "::set-output name=new_version::$NEW_VERSION"
+        
+        # Commit the new version to the repository
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add VERSION.txt
+        git commit -m "Increment version to $NEW_VERSION"
+        git tag "v$NEW_VERSION"
+        git push origin main --tags
+
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.sha }}
-        release_name: Release ${{ github.sha }}
+        tag_name: v${{ steps.increment_version.outputs.new_version }}
+        release_name: Release ${{ steps.increment_version.outputs.new_version }}
         draft: false
         prerelease: false
 
