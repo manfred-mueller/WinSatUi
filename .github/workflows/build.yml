@@ -66,8 +66,6 @@ jobs:
         git config --global user.email "github-actions@github.com"
         git add VERSION.txt
         git commit -m "Increment version to $newVersion"
-        #git tag "$newVersion"
-        #git push origin main --tags
 
     - name: Upload binaries to release
       uses: svenstaro/upload-release-action@v2
@@ -79,13 +77,3 @@ jobs:
         overwrite: true
         body: ${{ github.event.workflow_run.head_commit.message }}
 
-
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: WinSatUi/bin/Release/WinSatUi.exe  # Adjust this path if needed
-        asset_name: WinSatUi.exe
-        asset_content_type: application/octet-stream
